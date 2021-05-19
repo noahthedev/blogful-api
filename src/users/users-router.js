@@ -4,7 +4,7 @@ const xss = require('xss')
 const UsersService = require('./users-service')
 
 const usersRouter = express.Router()
-const jsonParses = express.json()
+const jsonParser = express.json()
 
 const serializeUser = user => ({
   id: user.id,
